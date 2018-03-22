@@ -1,6 +1,14 @@
 <html>
 <head><title>Test App</title></head>
 <body>
-<button onclick="window.open('https://www.google.com')">Open Link</button>
+<!-- <button onclick="window.open('https://www.google.com')">Open Link</button> -->
+<button onclick="popitup('https://www.google.com')">Open Link</button>
+<script>
+function popitup(url) {
+newwindow=window.open(url,'name','height=200,width=150');
+if (window.focus) {newwindow.focus()}
+return false;
+}
+</script>
 </body>
 </html>
